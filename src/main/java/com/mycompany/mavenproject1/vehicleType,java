@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class vehicleType{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the vehicletype");
+        String vehicletype = sc.nextLine();
+        switch(vehicleType){
+            case "car":
+            fee = 5;
+            break;
+            case "bus":
+            fee = 10;
+            break;
+            case "truck":
+            fee = 40;
+            break;
+        default:
+            System.out.println("unknown vehicle type");
+            
+        }
+        System.out.println("parking fee for" + vehicleType+"is $" + fee);
+    }
+}
